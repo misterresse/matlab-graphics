@@ -12,6 +12,9 @@ function graphics_plot1(x, y2D, xAndYAxisBounds, xAndYAxisDivs, labels, fontSize
     end
 
     graphics_set_axis(xAndYAxisBounds, xAndYAxisDivs);
+    graphics_set_grid_style('-');
+    graphics_set_xgrid('on');
+    graphics_set_ygrid('on');
     graphics_set_imgsize(imageSize);
     [xLabel, yLabel] = common_spilt(labels);
     graphics_label(title, xLabel, yLabel, fontSize);
