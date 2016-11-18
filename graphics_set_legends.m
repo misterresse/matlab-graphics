@@ -8,7 +8,7 @@ function graphics_set_legends(legends, legendsPosition, horizonal)
     
     orientation = {'vertical', 'horizontal'};
     
-    positions = {[north, west], [north, east], [south, west], [south, east], bottom};
+    positions = {[north, west], [north, east], [south, west], [south, east], 'Best', bottom};
     h = legend(legends);
     set(h, 'Location', char(positions(legendsPosition)), 'Orientation', char(orientation(horizonal)));
 
