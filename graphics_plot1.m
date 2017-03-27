@@ -9,6 +9,8 @@ function graphics_plot1(x, y2D, xAndYAxisBounds, xAndYAxisDivs, labels, fontSize
     nbr = common_element_row_count(y2D);
     for i = 1:nbr
         graphics_plot0(x, y2D(i,:), lineWidth, styles(i));
+        set(gca, 'FontSize', fontSize);
+        set(gca, 'LineWidth', 1.5);
     end
 
     graphics_set_axis(xAndYAxisBounds, xAndYAxisDivs);
